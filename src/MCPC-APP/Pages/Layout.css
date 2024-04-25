@@ -87,6 +87,8 @@
     margin-right: 16px;
     cursor: pointer;
     color: #92929D;
+    margin-bottom: 5px;
+        position: relative;
 }
 
 .sidebar-button img {
@@ -105,7 +107,19 @@
     background: linear-gradient(to right, #0B5B55, #1BC2B5);
     color: #FFFFFF;
 }
+.sidebar-button.active {
+    background: linear-gradient(to right, #0B5B55, #1BC2B5);
+    color: #FFFFFF;
+}
 
+.sidebar-button.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 5px;
+    height: 75%;
+    background-color: #1BC2B5;
+}
 .content {
     flex-grow: 1;
     padding-left: 25px;

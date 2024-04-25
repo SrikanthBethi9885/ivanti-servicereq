@@ -51,7 +51,7 @@ function Orders() {
     const [searchQuery, setSearchQuery] = useState<string>("");
 
     useEffect(() => {
-        fetch('http://localhost:3000/assets')
+        fetch('http://localhost:3001/assets')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
